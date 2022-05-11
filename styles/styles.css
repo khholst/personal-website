@@ -1,0 +1,120 @@
+@media only screen and (min-width: 576px) {
+    .navbar .navbar-nav .nav-item .nav-link {
+      padding: 0 1em;
+    }
+    .navbar .navbar-nav .nav-item:not(:last-child) .nav-link {
+      border-right: 1px solid #c3c3c3;
+    }
+  }
+
+  html {
+    overflow-y: scroll;
+  }
+
+nav {
+    background-color: rgb(16, 19, 33);
+    background-image: url(images/earth.png);
+    background-position: left;
+    background-repeat: repeat-x;
+    
+}
+
+
+body {
+    background-color: rgb(20, 23, 35);
+    color:rgb(179, 179, 179);
+    font-size: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    position: fixed;
+    bottom: 0px;
+    color: rgb(195, 195, 195);
+    width: 100%;
+    background-color: rgb(16, 19, 33);
+}
+
+
+
+h1 {
+    font-size: 160%;
+    margin-bottom: 0px;
+}
+
+h2 {
+    font-size: 140%;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+
+hr {
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+
+aside {
+    border-left: 2px solid rgb(57, 61, 95);
+    padding: 5px;
+}
+
+
+.first-p {
+    margin-top: 50px;
+}
+
+.icon {
+    padding: 0px 15px 0px 0px;
+}
+
+.icons {
+    margin-bottom: 30px;
+}
+
+.project-img {
+    float: inline-end;
+}
+
+.feedback-p {
+    display: inline;
+    margin-right: 10px;
+}
+
+.input-row {
+    margin-top: 20px;
+}
+
+
+#img-of-me {
+    border-radius: 50%;
+}
+
+.button {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+#feedback {
+    margin-top: 20px;
+}
+
+#name {
+    font-size: 150%;
+    margin-bottom: 0px;
+}
+
+#footer-text {
+    margin: 0px;
+    display: inline;
+}
+
+a:visited {
+    color: rgb(165, 100, 255);
+}

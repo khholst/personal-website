@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Karl H. Holst</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="dist/src/css/lightbox.css">
+    <link id="style" rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/print-styles.css" media="print">
+</head>
+
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cv.html">CV</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link active" href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col text-center">
+                    <a href="#content">Jump to content</a>
+                </div>
+            </div>
+          <div class="row text-center first-p">
+            <div class="col">
+              <figure><img src="images/me.jpg" id="img-of-me" class="img-fluid" alt="Image of me"></figure>
+            </div>
+          </div>
+    
+          <div class="row text-center">
+            <div class="col">
+              <p id="name">Karl Hendrik Holst</p>
+            </div>
+          </div>
+    
+          <div class="row text-center icons">
+            <div class="col">
+              <a href="https://github.com/khholst" target="_blank"><img src="images/git-icon.png" class="img-fluid icon"
+                  alt="GitHub link"></a>
+              <a href="https://www.linkedin.com/in/khholst/" target="_blank"><img src="images/linkedin-icon.png"
+                  class="img-fluid icon" alt="LinkedIn link"></a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+
+    <main>
+        <div class="container-fluid">
+            <section>
+                <div class="row text-center">
+                    <div class="col">
+                        <h1 id="content">Projects</h1>
+                    </div>
+                </div>
+    
+                <div class="row align-items-end">
+                    <div class="col-11">
+                        <h2>Philadelphia Public Transportation App</h2>
+                    </div>
+    
+                    <div class="col">
+                        <a href="https://github.com/khholst/live-philadelphia-public-transport-map" target="_blank"><img
+                                src="images/git-icon.png" alt="Git link to project repo" style="float: right; width: 32px;"></a>
+                    </div>
+                    <hr>
+                </div>
+    
+                <div class="row">
+                    <div class="col-lg-6 col-md-9 col-sm-12">
+                        <p>An application that visualises Philapelphia&#39;s public transportation data in real time,
+                            including on route buses, trolleys, trains and bus stops/train stations.
+                            It&#39;s possible to select specific vehicles to access more data such as:</p>
+                        <ul>
+                            <li>destination</li>
+                            <li>next stop</li>
+                            <li>current stop</li>
+                            <li>timing</li>
+                            <li>free seats</li>
+                        </ul>
+                        <p>As a basemap the application uses <a href="https://www.mapbox.com/" target="_blank">Mapbox tiles</a>.
+                            The data that is being processed and visualised is fetched from the <a
+                                href="http://www3.septa.org/api/" target="_blank">SEPTA API service</a> every 10 seconds.
+                        </p>
+                        <p>
+                            <a href="https://philadelphia-live-transit.herokuapp.com/">Explore</a> the application or take a look at the <a href="demo.html">demo video.</a>
+                        </p>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-12">
+                        <p>
+                            Tech Stack:
+                        </p>
+                        <ul>
+                            <li>Javascript</li>
+                            <li>p5.js</li>
+                            <li>mappa.js</li>
+                            <li>SEPTA API</li>
+                        </ul>
+                        
+                    </div>
+    
+                    <div class="col-lg-4 col-md-12 col-sm-12">
+    
+                        <a href="https://raw.githubusercontent.com/khholst/live-philadelphia-public-transport-map/main/philly-snip.PNG"
+                            data-lightbox="example-1">
+                            <img class="img-fluid project-img"
+                                src="images/thumbnails/philly-thumb.png"
+                                alt="Snipshot of Philadelphia public transportation app" width="400">
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- US crime map -->
+            <section>
+                <div class="row">
+                    <div class="col">
+                        <h2>United States Crime Map</h2>
+                    </div>
+    
+                    <div class="col">
+                        <a href="https://github.com/khholst/US-crime-map" target="_blank"><img
+                                src="images/git-icon.png" alt="Git link to project repo" style="float: right; width: 32px;"></a>
+                    </div>
+                    <hr>
+                </div>
+    
+                <div class="row">
+                    <div class="col-lg-6 col-md-9 col-sm-12">
+                        <p>An interactive web application to depict different crimes in the United States from 1960 to 2014. The buttons are for selecting the crime type, which is shown on the map and the graph. Using the slider it&#39;s possible to select a specific year to see the result on the map and by clicking on a state on the map, its data throughout the years is drawn on the graph. Also, when the selected year is not the last year in the dataset, it&#39;s possible to play a timelapse and see the chages in the selected crime type throughout the years without changing the slider manually.</p>
+                        <p>As a basemap the app uses <a href="https://carto.com/basemaps/" target="_blank">CARTO</a> tile services. The crime dataset used can be browsed <a href="https://github.com/khholst/US-crime-map/blob/main/data/CrimeByState.csv" target="_blank">here.</a></p>
+                        <p><a href="https://khholst.github.io/US-crime-map/" target="_blank">Explore</a> the application.</p>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-12">
+                        <p>
+                            Tech Stack:
+                        </p>
+                        <ul>
+                            <li>Javascript</li>
+                            <li>p5.js</li>
+                            <li>mappa.js</li>
+                        </ul>
+                    </div>
+    
+                    <div class="col-lg-4 col-md-12 col-sm-12">
+    
+                        <a href="https://raw.githubusercontent.com/khholst/US-crime-map/main/us-crime.png"
+                            data-lightbox="example-1">
+                            <img class="img-fluid project-img"
+                                src="images/thumbnails/crime-thumb.png"
+                                alt="Snipshot of the United States crime map" width="400">
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- Estonian city quiz -->
+            <section>
+                <div class="row">
+                    <div class="col">
+                        <h2>A Quiz Game of Estonian Cities</h2>
+                    </div>
+    
+                    <div class="col">
+                        <a href="https://github.com/khholst/Estonian-city-quiz" target="_blank"><img
+                                src="images/git-icon.png" alt="Git link to project repo" style="float: right; width: 32px;"></a>
+                    </div>
+                    <hr>
+                </div>
+    
+                <div class="row">
+                    <div class="col-lg-6 col-md-9 col-sm-12">
+                        <p>A quiz game where the goal is to mark Estonian cities as close and as fast as possible to their location on the map. In the start menu the palyer has to enter a name and the score is later added to the database and top 5 scores are shown on the leaderbard. For one guess the time limit is 5 seconds and after guessing, correct and guessed locations are shown on the map. In addition, the submenu shows the distance, time and score gained. The game ends when all of the 45 cities have been guessed.</p>
+                        <p>The basemap is created with QGIS software, using data from <a href="https://geoportaal.maaamet.ee/eng/Spatial-Data/Elevation-Data-p308.html" target="_blank">Estonian Land Board</a> tile services.</p>
+                        <p><a href="https://estonian-city-quiz.herokuapp.com/" target="_blank">Play</a> the game.</p>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-12">
+                        <p>
+                            Tech Stack:
+                        </p>
+                        <ul>
+                            <li>Node.js</li>
+                            <li>JavaScript</li>
+                            <li>MongoDB Atlas</li>
+                            <li>p5.js</li>
+                            <li>QGIS</li>
+                        </ul>
+                    </div>
+    
+                    <div class="col-lg-4 col-md-12 col-sm-12">
+    
+                        <a href="https://raw.githubusercontent.com/khholst/Estonian-city-quiz/main/quiz-snip.PNG"
+                            data-lightbox="example-1">
+                            <img class="img-fluid project-img"
+                                src="images/thumbnails/quiz-thumb.png"
+                                alt="Snipshot of the city quiz crime map" width="400">
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SDSU campus map -->
+            <section>
+                <div class="row">
+                    <div class="col">
+                        <h2>SDSU Campus Map</h2>
+                    </div>
+    
+                    <div class="col">
+                        <a href="https://github.com/khholst/SDSU-campus-map" target="_blank"><img
+                                src="images/git-icon.png" alt="Git link to project repo" style="float: right; width: 32px;"></a>
+                    </div>
+                    <hr>
+                </div>
+    
+                <div class="row">
+                    <div class="col-lg-6 col-md-9 col-sm-12">
+                        <p>Front-end map application of San Diego State University's campus with zooming, panning, building detection and map extent functionalities. All of the functionalities are created with image manipulation using Javascript and p5.js.</p>
+                        <p><a href="https://khholst.github.io/SDSU-campus-map/" target="_blank">Explore</a> the application.</p>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-12">
+                        <p>
+                            Tech Stack:
+                        </p>
+                        <ul>
+                            <li>JavaScript</li>
+                            <li>p5.js</li>
+                        </ul>
+                    </div>
+    
+                    <div class="col-lg-4 col-md-12 col-sm-12">
+    
+                        <a href="https://raw.githubusercontent.com/khholst/SDSU-campus-map/main/sdsu-snip.png"
+                            data-lightbox="example-1">
+                            <img class="img-fluid project-img"
+                                src="https://raw.githubusercontent.com/khholst/SDSU-campus-map/main/sdsu-snip.png"
+                                alt="Snipshot of the SDSU campus map" width="400">
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- Night length application -->
+            <section>
+                <div class="row">
+                    <div class="col">
+                        <h2>Night Length Application</h2>
+                    </div>
+    
+                    <div class="col">
+                        <a href="https://github.com/khholst/night-length-app" target="_blank"><img
+                                src="images/git-icon.png" alt="Git link to project repo" style="float: right; width: 32px;"></a>
+                    </div>
+                    <hr>
+                </div>
+    
+                <div class="row">
+                    <div class="col-lg-6 col-md-9 col-sm-12">
+                        <p>An application that calculates night length on any given day in any given location on Earth. In addition, it finds the time of sunrise, sunset and the times
+                            of civil, nautical and astronomical twilights. The calculations are based on a <a href="http://edwilliams.org/sunrise_sunset_algorithm.htm" target="_blank">formula</a> from <em>&quot;Almanac For Computers&quot;</em>.</p>
+                        <p><a href="https://night-length-app.herokuapp.com/" target="_blank">Explore</a> the application.</p>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-12">
+                        <p>
+                            Tech Stack:
+                        </p>
+                        <ul>
+                            <li>Node.js</li>
+                            <li>Javascript</li>
+                            <li>HTML</li>
+                            <li>Bootstrap</li>
+                        </ul>
+                    </div>
+    
+                    <div class="col-lg-4 col-md-12 col-sm-12">
+    
+                        <a href="https://raw.githubusercontent.com/khholst/night-length-app/main/night-length.PNG"
+                            data-lightbox="example-1">
+                            <img class="img-fluid project-img"
+                                src="https://raw.githubusercontent.com/khholst/night-length-app/main/night-length.PNG"
+                                alt="Snipshot of the night length application" width="400">
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <br>
+    </main>
+
+
+    <footer id="footer">
+        <p id="footer-text" style="display: inline;">Edited: May 2022</p>
+        <button id="css-change" style="display: inline; float:right;">Switch to larger text and bigger contrast</button>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="dist/src/js/lightbox.js"></script>
+    <script src="scripts/change-css.js"></script>
+</body>
+
+
+</html>
