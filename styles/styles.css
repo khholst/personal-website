@@ -13,7 +13,7 @@
 
 nav {
     background-color: rgb(16, 19, 33);
-    background-image: url(images/earth.png);
+    background-image: url(../images/earth.png);
     background-position: left;
     background-repeat: repeat-x;
     
@@ -89,6 +89,16 @@ aside {
 
 .input-row {
     margin-top: 20px;
+}
+
+.git-img {
+    float: right;
+    width: 32px;
+}
+
+.css-change {
+    display: inline; 
+    float:right;
 }
 
 
